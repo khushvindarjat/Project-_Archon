@@ -51,37 +51,37 @@
         <p>Set up your free Archon account in seconds</p>
       </div>
       
-      <form class="auth-form">
+      <form class="auth-form" id="registrationForm">
         <div class="auth-form-row">
           <div class="form-group">
             <label class="form-label">First Name</label>
-            <input type="text" class="form-input" placeholder="John">
+            <input type="text" id="firstName" class="form-input" placeholder="John" required>
           </div>
           <div class="form-group">
             <label class="form-label">Last Name</label>
-            <input type="text" class="form-input" placeholder="Doe">
+            <input type="text" id="lastName" class="form-input" placeholder="Doe" required>
           </div>
         </div>
         
         <div class="form-group">
           <label class="form-label">Email Address</label>
-          <input type="email" class="form-input" placeholder="name@example.com">
+          <input type="email" id="email" class="form-input" placeholder="name@example.com" required>
         </div>
         
         <div class="form-group">
           <label class="form-label">Password</label>
           <div class="input-icon-wrap">
-            <input type="password" class="form-input" placeholder="••••••••">
-            <i class="fa-regular fa-eye"></i>
+            <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+            <i class="fa-regular fa-eye" id="togglePassword" style="cursor: pointer;"></i>
           </div>
         </div>
         
         <label class="auth-checkbox" style="align-items: flex-start; margin-top: var(--space-2);">
-          <input type="checkbox" style="margin-top: 4px;">
+          <input type="checkbox" id="termsCheckbox" style="margin-top: 4px;" required>
           <span class="text-xs leading-relaxed">I agree to the <a href="#" class="auth-link">Terms of Service</a> and <a href="#" class="auth-link">Privacy Policy</a>, and confirm I am over 18 years old.</span>
         </label>
         
-        <button type="button" class="btn btn-primary btn-lg" style="margin-top: var(--space-4);">Create Account</button>
+        <button type="submit" class="btn btn-primary btn-lg" style="margin-top: var(--space-4);">Create Account</button>
       </form>
       
       <div class="auth-divider">or sign up with</div>
